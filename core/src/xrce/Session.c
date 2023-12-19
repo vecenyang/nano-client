@@ -3892,6 +3892,9 @@ NANO_XRCE_Session_send(
         self->key,
         NANO_XRCE_Stream_id(stream));
 
+    NANO_MessageBuffer_flags_set(header, NANO_XRCE_MESSAGEFLAGS_OWNED_BY_STREAM);
+    NANO_MessageBuffer_set_type(header, NANO_XRCE_MESSAGETYPE_INLINE_HEADER);
+
     if (reliable_stream)
     {
         /* Since we only send one submsg at a time, we always imply
