@@ -309,7 +309,7 @@ NANO_CDR_Stream_reset(
 {\
     if ((s_)->cur_alignment < xrce_str_concat(t_, _alignment))\
     {\
-        (s_)->head = NANO_OSAPI_Memory_align((s_)->head, t_);\
+        (s_)->head = NANO_OSAPI_Memory_align((s_)->head - (s_)->buffer, t_) + (NANO_usize)(s_)->buffer;\
     }\
     (s_)->cur_alignment = xrce_str_concat(t_, _alignment);\
 }
