@@ -154,7 +154,7 @@ int main(int argc, char const *argv[])
                 TYPE_ID,
                 "<types>"
                     "<struct name=\"SensorData\">"
-                        "<member name=\"id\" key=\"true\""
+                        "<member name=\"id\" key=\"true\" "
                                 "type=\"uint8\" arrayDimensions=\"4\"/>"
                         "<member name=\"value\" type=\"uint32\"/>"
                     "</struct>"
