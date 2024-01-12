@@ -2454,7 +2454,7 @@ NANO_XRCE_Client_create_domain_xml(
         (r_st_),\
         (r_f_),\
         (r_t_),\
-        NANO_XRCE_OBJK_TOPIC,\
+        NANO_XRCE_OBJK_DOMAIN,\
         (o_id_),\
         0 ,\
         (o_xml_))
