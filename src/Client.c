@@ -2885,6 +2885,7 @@ NANO_XRCE_Client_create_object_xml(
     args.repr_fmt = NANO_XRCE_REPRESENTATION_AS_XML_STRING;
     args.repr = (NANO_u8*)object_xml_repr;
     args.repr_len = NANO_OSAPI_String_length(object_xml_repr);
+    args.obj_kind = object_kind;
 
     switch (object_kind)
     {
@@ -2965,6 +2966,7 @@ NANO_XRCE_Client_register_object(
     args.repr_fmt = NANO_XRCE_REPRESENTATION_BY_REFERENCE;
     args.repr = (NANO_u8*)object_ref;
     args.repr_len = NANO_OSAPI_String_length(object_ref);
+    args.obj_kind = object_kind;
 
     switch (object_kind)
     {
