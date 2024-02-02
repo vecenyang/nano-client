@@ -117,7 +117,7 @@ void setup()
 {
     /* Initialize serial port */
     serial_init();
-    
+
     /* Initialize wifi connection */
     wifi_connect();
 

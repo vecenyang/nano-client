@@ -134,6 +134,12 @@ bool xrce_connect()
     /* Set callback to be notified of received XRCE data */
     client.on_data_callback(on_data);
 
+    if (!reader.read_data())
+    {
+      Serial.println("Failed to register the reader");
+      return false;
+    }
+
     Serial.println("Connected to XRCE agent");
     return true;
 }
