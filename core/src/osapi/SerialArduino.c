@@ -76,7 +76,7 @@ NANO_OSAPI_ArduinoSerialConnection_write(
     const NANO_usize data_len)
 {
     NANO_RetCode rc = NANO_RETCODE_ERROR;
-    int rci = 0;
+    NANO_usize rci = 0;
     
     NANO_LOG_FN_ENTRY
 
