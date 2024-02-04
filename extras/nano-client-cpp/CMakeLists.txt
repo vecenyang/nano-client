@@ -85,9 +85,11 @@ set(NANO_CLIENT_CPP_INCLUDE_FILES_PUBLIC
         include/nano/nano_client_object.hpp
         include/nano/nano_client_stream.hpp
         include/nano/nano_client_transport.hpp
-        include/nano/nano_client_xcdr.hpp)
+        include/nano/nano_client_xcdr.hpp
+        include/nano/nano_core_osapi_net_wifinina.h)
 
 set(NANO_CLIENT_CPP_SOURCE_FILES
+        src/osapi/NetWifiNina.cpp
         src/xrce/XrceClient.cpp
         src/xrce/XrceObject.cpp
         src/xrce/XrceStream.cpp

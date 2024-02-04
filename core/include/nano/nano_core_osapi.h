@@ -1805,6 +1805,10 @@ NANO_OSAPI_SerialConnection_close(NANO_OSAPI_SerialConnection *const self);
 #elif defined(NANO_HAVE_SOCKET_WIN)
     #define NANO_IPNET_DEF_H "nano/nano_core_osapi_net_win.h"
     #include NANO_IPNET_DEF_H
+#elif defined(NANO_HAVE_WIFININA)
+    /* An implementation using WiFiNINA */
+    #define NANO_IPNET_DEF_H "nano/nano_core_osapi_net_wifinina.h"
+    #include NANO_IPNET_DEF_H
 #elif 0
     #warning "Please provide a network stack for your custom platform by defining NANO_IPNET_DEF_H"
 #endif /* NANO_PLATFORM */

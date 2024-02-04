@@ -100,6 +100,14 @@
 // #define NANO_HAVE_SOCKET
 #define NANO_HAVE_LWIP
 
+#elif defined(ARDUINO_NANO_RP2040_CONNECT)
+
+/* NANO_RP2040_CONNECT */
+/* No official suppoert for lwip, needs to add netif*/
+
+/* Use WiFiNINA socket directly */
+#define NANO_HAVE_WIFININA
+
 #else
 
 // #warning "Unsupported Arduino target"
