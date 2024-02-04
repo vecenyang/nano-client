@@ -23,7 +23,7 @@
    See nano_core_config.h for all available configuration parameters. */
 
 /* Enable logging: */
-/* #define NANO_FEAT_LOG            1 */
+#define NANO_FEAT_LOG            1
 
 /* Enable debug precoditions: */
 /* #define NANO_ENABLE_PRECONDITION */

@@ -197,10 +197,10 @@ typedef struct NANODllExport NANO_OSAPI_ArduinoClockI
 /******************************************************************************
  *          Debug helpers
  ******************************************************************************/
-// #if NANO_FEAT_LOG
-// #define NANO_OSAPI_Debug_printf                 printf
-// #define NANO_HAVE_PRINTF
-// #endif /* NANO_FEAT_LOG */
+#if NANO_FEAT_LOG
+#define NANO_OSAPI_Debug_printf                 printf
+#define NANO_HAVE_PRINTF
+#endif /* NANO_FEAT_LOG */
 
 
 /******************************************************************************
