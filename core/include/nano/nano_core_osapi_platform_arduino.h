@@ -207,7 +207,7 @@ typedef struct NANODllExport NANO_OSAPI_ArduinoClockI
  *                  Scheduler Helpers
  ******************************************************************************/
 extern void esp_yield();
-
+extern void delay(uint32_t);
 #define NANO_OSAPI_Scheduler_yield()              delay(0)
 #define NANO_HAVE_YIELD
 
